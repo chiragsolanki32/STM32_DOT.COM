@@ -1,0 +1,12 @@
+sht21_driver.c:59:20:i2c_SHT2x_write_reg	1
+sht21_driver.c:79:20:i2c_SHT2x_write_cmd	2
+sht21_driver.c:103:20:i2c_SHT2x_read_reg	1
+sht21_driver.c:126:23:SHT2x_CheckCrc	5
+sht21_driver.c:159:6:SHT2x_CalcTemp	2
+sht21_driver.c:194:6:SHT2x_CalcHumid	2
+sht21_driver.c:228:6:SHT2x_CalcAll	3
+sht21_driver.c:277:6:SHT2x_write_user_reg	1
+sht21_driver.c:291:9:SHT2x_read_user_reg	1
+sht21_driver.c:309:6:SHT2x_reset	1
+sht21_driver.c:328:9:SHT2x_init	2
+sht21_driver.c:350:6:SHT2x_peripheral_config	2

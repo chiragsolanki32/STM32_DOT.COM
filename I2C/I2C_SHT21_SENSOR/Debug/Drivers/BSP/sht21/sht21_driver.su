@@ -1,0 +1,12 @@
+../Drivers/BSP/sht21/sht21_driver.c:59:20:i2c_SHT2x_write_reg	32	static
+../Drivers/BSP/sht21/sht21_driver.c:79:20:i2c_SHT2x_write_cmd	24	static
+../Drivers/BSP/sht21/sht21_driver.c:103:20:i2c_SHT2x_read_reg	24	static
+../Drivers/BSP/sht21/sht21_driver.c:126:23:SHT2x_CheckCrc	24	static
+../Drivers/BSP/sht21/sht21_driver.c:159:6:SHT2x_CalcTemp	24	static
+../Drivers/BSP/sht21/sht21_driver.c:194:6:SHT2x_CalcHumid	24	static
+../Drivers/BSP/sht21/sht21_driver.c:228:6:SHT2x_CalcAll	24	static
+../Drivers/BSP/sht21/sht21_driver.c:277:6:SHT2x_write_user_reg	16	static
+../Drivers/BSP/sht21/sht21_driver.c:291:9:SHT2x_read_user_reg	16	static
+../Drivers/BSP/sht21/sht21_driver.c:309:6:SHT2x_reset	8	static
+../Drivers/BSP/sht21/sht21_driver.c:328:9:SHT2x_init	24	static
+../Drivers/BSP/sht21/sht21_driver.c:350:6:SHT2x_peripheral_config	16	static

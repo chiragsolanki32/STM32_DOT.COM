@@ -1,0 +1,22 @@
+09:37:52 **** Incremental Build of configuration Debug for project I2C_SHT21_SENSOR ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/BSP/sht21/sht21_driver.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L496xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I"/home/dnk066/chirag/STM32/work space/I2C/I2C_SHT21_SENSOR/Drivers/BSP/sht21" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/sht21/sht21_driver.d" -MT"Drivers/BSP/sht21/sht21_driver.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/sht21/sht21_driver.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L496xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I"/home/dnk066/chirag/STM32/work space/I2C/I2C_SHT21_SENSOR/Drivers/BSP/sht21" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Drivers/BSP/sht21/sht21_driver.c: In function 'i2c_SHT2x_write_cmd':
+../Drivers/BSP/sht21/sht21_driver.c:85:6: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+   85 |      Error_Handler();
+      |      ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "I2C_SHT21_SENSOR.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dnk066/chirag/STM32/work space/I2C/I2C_SHT21_SENSOR/STM32L496ZGTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_SHT21_SENSOR.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: I2C_SHT21_SENSOR.elf
+ 
+arm-none-eabi-size   I2C_SHT21_SENSOR.elf 
+arm-none-eabi-objdump -h -S  I2C_SHT21_SENSOR.elf  > "I2C_SHT21_SENSOR.list"
+   text	   data	    bss	    dec	    hex	filename
+  41724	    488	   1824	  44036	   ac04	I2C_SHT21_SENSOR.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_SHT21_SENSOR.list
+ 
+
+09:37:54 Build Finished. 0 errors, 1 warnings. (took 2s.126ms)
+
