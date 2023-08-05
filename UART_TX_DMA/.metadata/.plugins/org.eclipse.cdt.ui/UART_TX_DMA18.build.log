@@ -1,0 +1,10 @@
+13:36:08 **** Incremental Build of configuration Debug for project UART_TX_DMA18 ****
+make -j4 all 
+arm-none-eabi-size   UART_TX_DMA18.elf 
+   text	   data	    bss	    dec	    hex	filename
+  14724	     20	   3780	  18524	   485c	UART_TX_DMA18.elf
+Finished building: default.size.stdout
+ 
+
+13:36:08 Build Finished. 0 errors, 0 warnings. (took 575ms)
+
