@@ -1,0 +1,35 @@
+14:41:14 **** Incremental Build of configuration Debug for project GPIO_INPUT_BUTTON ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xC -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "GPIO_INPUT_BUTTON.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/dnk066/chirag/STM32/work space/GREEN/GPIO_INPUT_BUTTON/STM32L152RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="GPIO_INPUT_BUTTON.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: GPIO_INPUT_BUTTON.elf
+ 
+arm-none-eabi-size   GPIO_INPUT_BUTTON.elf 
+arm-none-eabi-objdump -h -S  GPIO_INPUT_BUTTON.elf  > "GPIO_INPUT_BUTTON.list"
+   text	   data	    bss	    dec	    hex	filename
+   6564	     20	   1572	   8156	   1fdc	GPIO_INPUT_BUTTON.elf
+Finished building: default.size.stdout
+ 
+Finished building: GPIO_INPUT_BUTTON.list
+ 
+14:41:20 **** Incremental Build of configuration Debug for project GPIO_INPUT_BUTTON ****
+make -j4 all 
+arm-none-eabi-size   GPIO_INPUT_BUTTON.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6564	     20	   1572	   8156	   1fdc	GPIO_INPUT_BUTTON.elf
+Finished building: default.size.stdout
+ 
+15:40:47 **** Incremental Build of configuration Debug for project GPIO_INPUT_BUTTON ****
+make -j4 all 
+arm-none-eabi-size   GPIO_INPUT_BUTTON.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6564	     20	   1572	   8156	   1fdc	GPIO_INPUT_BUTTON.elf
+Finished building: default.size.stdout
+ 
+15:41:01 **** Incremental Build of configuration Debug for project GPIO_INPUT_BUTTON ****
+make -j4 all 
+arm-none-eabi-size   GPIO_INPUT_BUTTON.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6564	     20	   1572	   8156	   1fdc	GPIO_INPUT_BUTTON.elf
+Finished building: default.size.stdout
+ 

@@ -1,0 +1,10 @@
+15:41:01 **** Incremental Build of configuration Debug for project GPIO_INPUT_BUTTON ****
+make -j4 all 
+arm-none-eabi-size   GPIO_INPUT_BUTTON.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6564	     20	   1572	   8156	   1fdc	GPIO_INPUT_BUTTON.elf
+Finished building: default.size.stdout
+ 
+
+15:41:01 Build Finished. 0 errors, 0 warnings. (took 435ms)
+

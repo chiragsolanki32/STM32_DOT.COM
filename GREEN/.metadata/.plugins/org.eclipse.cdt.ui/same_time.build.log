@@ -1,0 +1,30 @@
+11:13:13 **** Incremental Build of configuration Debug for project same_time ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xC -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xC -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32l1xx_it.d" -MT"Core/Src/stm32l1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32l1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xC -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32l1xx.d" -MT"Core/Src/system_stm32l1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32l1xx.o"
+../Core/Src/main.c:45:24: error: expected ';' before 'void'
+   45 | GPIO_PinState BSP_BLUE_
+      |                        ^
+      |                        ;
+......
+   49 | void SystemClock_Config(void);
+      | ~~~~                    
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:4: error: 'HAL_GPIO_' undeclared (first use in this function); did you mean 'HAL_GPIO_Init'?
+  100 | if(HAL_GPIO_)
+      |    ^~~~~~~~~
+      |    HAL_GPIO_Init
+../Core/Src/main.c:100:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:100:1: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  100 | if(HAL_GPIO_)
+      | ^~
+../Core/Src/main.c:110:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  110 |    HAL_GPIO_WritePin(BSP_GREEN_GPIO_Port, BSP_GREEN_Pin, 1);
+      |    ^~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+11:13:14 Build Failed. 4 errors, 1 warnings. (took 786ms)
+
