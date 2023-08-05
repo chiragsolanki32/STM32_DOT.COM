@@ -1,0 +1,10 @@
+10:47:11 **** Incremental Build of configuration Debug for project SPI_SD_CARD_CHECK ****
+make -j4 all 
+arm-none-eabi-size   SPI_SD_CARD_CHECK.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32496	    140	  10332	  42968	   a7d8	SPI_SD_CARD_CHECK.elf
+Finished building: default.size.stdout
+ 
+
+10:47:11 Build Finished. 0 errors, 0 warnings. (took 438ms)
+

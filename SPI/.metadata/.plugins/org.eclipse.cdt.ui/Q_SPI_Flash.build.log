@@ -1,0 +1,17 @@
+13:26:35 **** Incremental Build of configuration Debug for project Q_SPI_Flash ****
+make -j4 all 
+arm-none-eabi-gcc "../Drivers/BSP/Flash/MX25L_QSPI_Flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L496xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I"/home/dnk066/chirag/STM32/work space/SPI/Q_SPI_Flash/Drivers/BSP/Flash" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/Flash/MX25L_QSPI_Flash.d" -MT"Drivers/BSP/Flash/MX25L_QSPI_Flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/Flash/MX25L_QSPI_Flash.o"
+arm-none-eabi-gcc -o "Q_SPI_Flash.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dnk066/chirag/STM32/work space/SPI/Q_SPI_Flash/STM32L496ZGTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="Q_SPI_Flash.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Q_SPI_Flash.elf
+ 
+arm-none-eabi-size   Q_SPI_Flash.elf 
+arm-none-eabi-objdump -h -S  Q_SPI_Flash.elf  > "Q_SPI_Flash.list"
+   text	   data	    bss	    dec	    hex	filename
+  25656	    120	   2456	  28232	   6e48	Q_SPI_Flash.elf
+Finished building: default.size.stdout
+ 
+Finished building: Q_SPI_Flash.list
+ 
+
+13:26:37 Build Finished. 0 errors, 0 warnings. (took 1s.968ms)
+

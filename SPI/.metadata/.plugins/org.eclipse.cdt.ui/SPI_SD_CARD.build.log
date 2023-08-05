@@ -1,0 +1,19 @@
+19:48:43 **** Incremental Build of configuration Debug for project SPI_SD_CARD ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/fatfs_sd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L496xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/fatfs_sd.d" -MT"Core/Src/fatfs_sd.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/fatfs_sd.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L496xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/fatfs_sd.c:19:10: fatal error: fatfs_sd.h: No such file or directory
+   19 | #include "fatfs_sd.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:37: Core/Src/fatfs_sd.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Core/Src/main.c:25:10: fatal error: fatfs_sd.h: No such file or directory
+   25 | #include "fatfs_sd.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+19:48:43 Build Failed. 5 errors, 0 warnings. (took 542ms)
+

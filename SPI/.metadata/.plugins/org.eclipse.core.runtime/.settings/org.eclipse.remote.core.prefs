@@ -1,0 +1,11 @@
+connections/org.eclipse.remote.serial.core.connectionType/e/serial.baudRate=11
+connections/org.eclipse.remote.serial.core.connectionType/e/serial.byteSize=3
+connections/org.eclipse.remote.serial.core.connectionType/e/serial.parity=0
+connections/org.eclipse.remote.serial.core.connectionType/e/serial.portName=/dev/ttyACM0
+connections/org.eclipse.remote.serial.core.connectionType/e/serial.stopBits=0
+connections/org.eclipse.remote.serial.core.connectionType/spi/serial.baudRate=11
+connections/org.eclipse.remote.serial.core.connectionType/spi/serial.byteSize=3
+connections/org.eclipse.remote.serial.core.connectionType/spi/serial.parity=0
+connections/org.eclipse.remote.serial.core.connectionType/spi/serial.portName=/dev/ttyACM0
+connections/org.eclipse.remote.serial.core.connectionType/spi/serial.stopBits=0
+eclipse.preferences.version=1

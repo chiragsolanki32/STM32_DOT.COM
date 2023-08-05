@@ -1,0 +1,6 @@
+FlashCircularBuffer.c:32:7:isDataAvailable	1
+FlashCircularBuffer.c:42:7:isMemoryAvailable	1
+FlashCircularBuffer.c:54:6:FlashCircularBufferInit	1
+FlashCircularBuffer.c:72:12:WriteDatasetToFlash	8
+FlashCircularBuffer.c:174:12:ReadDatasetFromFlash	4
+FlashCircularBuffer.c:227:12:EraseFlashSector	35

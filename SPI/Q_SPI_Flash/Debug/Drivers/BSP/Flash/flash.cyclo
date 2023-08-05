@@ -1,0 +1,5 @@
+flash.c:36:10:Flash_Init	2
+flash.c:55:10:Flash_DeInit	1
+flash.c:73:10:Flash_Erase	8
+flash.c:121:10:Flash_Write	2
+flash.c:143:10:Flash_Read	2
