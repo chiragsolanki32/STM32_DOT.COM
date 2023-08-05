@@ -1,0 +1,10 @@
+09:34:49 **** Incremental Build of configuration Debug for project counter ****
+make -j4 all 
+arm-none-eabi-size   counter.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7880	     20	   1636	   9536	   2540	counter.elf
+Finished building: default.size.stdout
+ 
+
+09:34:49 Build Finished. 0 errors, 0 warnings. (took 578ms)
+

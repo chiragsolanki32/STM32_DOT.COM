@@ -1,0 +1,10 @@
+13:04:43 **** Incremental Build of configuration Debug for project PWM_LED_CONTROL ****
+make -j4 all 
+arm-none-eabi-size   PWM_LED_CONTROL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10796	     20	   1644	  12460	   30ac	PWM_LED_CONTROL.elf
+Finished building: default.size.stdout
+ 
+
+13:04:44 Build Finished. 0 errors, 0 warnings. (took 497ms)
+

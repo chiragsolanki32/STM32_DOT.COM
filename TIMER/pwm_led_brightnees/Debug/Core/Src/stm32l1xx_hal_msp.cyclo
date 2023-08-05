@@ -1,0 +1,4 @@
+stm32l1xx_hal_msp.c:65:6:HAL_MspInit	1
+stm32l1xx_hal_msp.c:90:6:HAL_TIM_Base_MspInit	2
+stm32l1xx_hal_msp.c:106:6:HAL_TIM_MspPostInit	2
+stm32l1xx_hal_msp.c:139:6:HAL_TIM_Base_MspDeInit	2

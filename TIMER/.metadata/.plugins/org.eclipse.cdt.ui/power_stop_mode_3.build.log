@@ -1,0 +1,10 @@
+10:52:34 **** Incremental Build of configuration Debug for project power_stop_mode_3 ****
+make -j4 all 
+arm-none-eabi-size   power_stop_mode_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37808	    152	   3688	  41648	   a2b0	power_stop_mode_3.elf
+Finished building: default.size.stdout
+ 
+
+10:52:34 Build Finished. 0 errors, 0 warnings. (took 435ms)
+

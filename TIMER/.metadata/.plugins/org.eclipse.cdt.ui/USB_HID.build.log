@@ -1,0 +1,10 @@
+16:27:36 **** Build of configuration Debug for project USB_HID ****
+make -j4 all 
+arm-none-eabi-size   USB_HID.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29044	    380	   4124	  33548	   830c	USB_HID.elf
+Finished building: default.size.stdout
+ 
+
+16:27:36 Build Finished. 0 errors, 0 warnings. (took 503ms)
+

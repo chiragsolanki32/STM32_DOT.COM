@@ -1,0 +1,17 @@
+17:50:10 **** Incremental Build of configuration Debug for project LED_BLINK ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L496xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LED_BLINK.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dnk066/chirag/STM32/work space/TIMER/LED_BLINK/STM32L496ZGTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="LED_BLINK.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LED_BLINK.elf
+ 
+arm-none-eabi-size   LED_BLINK.elf 
+arm-none-eabi-objdump -h -S  LED_BLINK.elf  > "LED_BLINK.list"
+   text	   data	    bss	    dec	    hex	filename
+   6340	     20	   1572	   7932	   1efc	LED_BLINK.elf
+Finished building: default.size.stdout
+ 
+Finished building: LED_BLINK.list
+ 
+
+17:50:11 Build Finished. 0 errors, 0 warnings. (took 895ms)
+

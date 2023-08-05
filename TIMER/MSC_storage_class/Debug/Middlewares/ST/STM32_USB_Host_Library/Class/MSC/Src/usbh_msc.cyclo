@@ -1,0 +1,12 @@
+usbh_msc.c:147:27:USBH_MSC_InterfaceInit	7
+usbh_msc.c:231:27:USBH_MSC_InterfaceDeInit	4
+usbh_msc.c:265:27:USBH_MSC_ClassRequest	10
+usbh_msc.c:321:27:USBH_MSC_Process	27
+usbh_msc.c:531:27:USBH_MSC_SOFProcess	1
+usbh_msc.c:545:27:USBH_MSC_RdWrProcess	14
+usbh_msc.c:666:10:USBH_MSC_IsReady	3
+usbh_msc.c:689:10:USBH_MSC_GetMaxLUN	3
+usbh_msc.c:708:10:USBH_MSC_UnitIsReady	3
+usbh_msc.c:732:20:USBH_MSC_GetLUNInfo	2
+usbh_msc.c:756:20:USBH_MSC_Read	7
+usbh_msc.c:803:20:USBH_MSC_Write	7

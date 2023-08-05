@@ -1,0 +1,10 @@
+17:11:20 **** Incremental Build of configuration Debug for project mass_storage_class ****
+make -j4 all 
+arm-none-eabi-size   mass_storage_class.elf 
+   text	   data	    bss	    dec	    hex	filename
+  35440	    380	 107132	 142952	  22e68	mass_storage_class.elf
+Finished building: default.size.stdout
+ 
+
+17:11:20 Build Finished. 0 errors, 0 warnings. (took 500ms)
+

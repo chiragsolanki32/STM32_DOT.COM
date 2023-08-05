@@ -1,0 +1,15 @@
+core_cm4.h:1809:22:__NVIC_SetPriority	2
+core_cm4.h:2017:26:SysTick_Config	2
+main.c:84:6:HAL_GPIO_EXTI_Callback	3
+main.c:161:5:main	4
+main.c:268:6:SystemClock_Config	4
+main.c:320:13:MX_LPUART1_UART_Init	2
+main.c:354:13:MX_RTC_Init	6
+main.c:444:13:MX_TIM1_Init	4
+main.c:492:13:MX_TIM2_Init	5
+main.c:542:13:MX_GPIO_Init	1
+main.c:595:10:millis	1
+main.c:599:6:HAL_TIM_PeriodElapsedCallback	2
+main.c:605:6:initializeTimer	1
+main.c:618:6:enterStopMode	1
+main.c:637:6:Error_Handler	1

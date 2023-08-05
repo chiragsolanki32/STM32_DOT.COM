@@ -1,0 +1,10 @@
+16:43:13 **** Incremental Build of configuration Debug for project watch_dog_timer_IWDG ****
+make -j4 all 
+arm-none-eabi-size   watch_dog_timer_IWDG.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6700	     20	   1580	   8300	   206c	watch_dog_timer_IWDG.elf
+Finished building: default.size.stdout
+ 
+
+16:43:14 Build Finished. 0 errors, 0 warnings. (took 447ms)
+

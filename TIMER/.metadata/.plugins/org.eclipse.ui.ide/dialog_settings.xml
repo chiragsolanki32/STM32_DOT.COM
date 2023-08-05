@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/dnk066/chirag/STM32/work space/ADC/ADC_DMA"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="BUILD_NOW" value="true"/>
+		<item key="BUILD_ALL" value="true"/>
+		<item key="TOGGLE_SELECTED" value="false"/>
+		<item key="DIALOG_WIDTH" value="569"/>
+		<item key="DIALOG_HEIGHT" value="515"/>
+		<item key="DIALOG_FONT_NAME" value="1|Roboto|12.0|0|GTK|1|"/>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/dnk066/chirag/stm32_chandan/STM32"/>
+			<item value="/home/dnk066/chirag/STM32/work space/TIMER"/>
+			<item value="/home/dnk066/chirag/STM32/work space/MY_PROJECT/BUTTON_INTRRUPT"/>
+			<item value="/home/dnk066/chirag/STM32/work space/TIMER/PWM_INPUT_CAPTURE"/>
+			<item value="/home/dnk066/chirag/STM32/work space"/>
+			<item value="/home/dnk066/chirag/STM32/work space/TIMER/stop_mode"/>
+			<item value="/home/dnk066/chirag/STM32/work space/TIMER/power_stop_mode"/>
+			<item value="/home/dnk066/chirag/STM32/work space/TIMER/power_stop_mode/Core"/>
+			<item value="/home/dnk066/chirag/workspace0/stop_mode_rtc"/>
+			<item value="/home/dnk066/chirag/STM32/stop_mode_rtc"/>
+			<item value="/home/dnk066/chirag/STM32/work space/MY_PROJECT"/>
+			<item value="/home/dnk066/chirag/STM32/work space/MY_PROJECT/led_onoff_15"/>
+			<item value="/home/dnk066/chirag/STM32/work space/MY_PROJECT/led_push_button"/>
+		</list>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="337"/>
+		<item key="DIALOG_Y_ORIGIN" value="87"/>
+		<item key="DIALOG_WIDTH" value="613"/>
+		<item key="DIALOG_HEIGHT" value="613"/>
+		<item key="DIALOG_FONT_NAME" value="1|Roboto|12.0|0|GTK|1|"/>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="259"/>
+		<item key="DIALOG_Y_ORIGIN" value="258"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+</section>

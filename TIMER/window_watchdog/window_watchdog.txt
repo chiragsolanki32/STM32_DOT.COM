@@ -1,0 +1,64 @@
+Configuration	window_watchdog
+STM32CubeMX 	6.8.1
+Date	07/05/2023
+MCU	STM32L496ZGTxP
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+LPUART1	Asynchronous	LPUART1_RX	PG8
+LPUART1	Asynchronous	LPUART1_TX	PG7
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	PH0-OSC_IN (PH0)
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	PH1-OSC_OUT (PH1)
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+23	PH0-OSC_IN (PH0)	RCC_OSC_IN	
+24	PH1-OSC_OUT (PH1)	RCC_OSC_OUT	
+92	PG7	LPUART1_TX	
+93	PG8	LPUART1_RX	
+136	PB7	GPIO_Output	BSP_USER_LED
+PERIPHERALS	MODES	FUNCTIONS	PINS
+LPUART1	Asynchronous	LPUART1_RX	PG8
+LPUART1	Asynchronous	LPUART1_TX	PG7
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	PH0-OSC_IN (PH0)
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	PH1-OSC_OUT (PH1)
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+23	PH0-OSC_IN (PH0)	RCC_OSC_IN	
+24	PH1-OSC_OUT (PH1)	RCC_OSC_OUT	
+92	PG7	LPUART1_TX	
+93	PG8	LPUART1_RX	
+136	PB7	GPIO_Output	BSP_USER_LED
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : window_watchdog
+Project Folder : /home/dnk066/chirag/STM32/work space/TIMER/window_watchdog
+Toolchain / IDE : STM32CubeIDE
+Firmware Package Name and Version : STM32Cube FW_L4 V1.17.2
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy only the necessary library files
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : No
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+

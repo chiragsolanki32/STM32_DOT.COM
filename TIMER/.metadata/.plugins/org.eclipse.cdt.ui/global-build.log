@@ -1,0 +1,44 @@
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L496xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "intrupts_led_on.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dnk066/chirag/STM32/work space/TIMER/intrupts_led_on/STM32L496ZGTXP_FLASH.ld" --specs=nosys.specs -Wl,-Map="intrupts_led_on.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: intrupts_led_on.elf
+ 
+arm-none-eabi-size   intrupts_led_on.elf 
+arm-none-eabi-objdump -h -S  intrupts_led_on.elf  > "intrupts_led_on.list"
+   text	   data	    bss	    dec	    hex	filename
+   6472	     20	   1572	   8064	   1f80	intrupts_led_on.elf
+Finished building: default.size.stdout
+ 
+Finished building: intrupts_led_on.list
+ 
+
+16:50:16 Build Finished. 0 errors, 0 warnings. (took 1s.56ms)
+
+16:50:18 **** Incremental Build of configuration Debug for project intrupts_led_on ****
+make -j4 all 
+arm-none-eabi-size   intrupts_led_on.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6472	     20	   1572	   8064	   1f80	intrupts_led_on.elf
+Finished building: default.size.stdout
+ 
+16:50:21 **** Incremental Build of configuration Debug for project intrupts_led_on ****
+make -j4 all 
+arm-none-eabi-size   intrupts_led_on.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6472	     20	   1572	   8064	   1f80	intrupts_led_on.elf
+Finished building: default.size.stdout
+ 
+17:22:23 **** Incremental Build of configuration Debug for project intrupts_led_on ****
+make -j4 all 
+arm-none-eabi-size   intrupts_led_on.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6472	     20	   1572	   8064	   1f80	intrupts_led_on.elf
+Finished building: default.size.stdout
+ 
+17:22:55 **** Incremental Build of configuration Debug for project intrupts_led_on ****
+make -j4 all 
+arm-none-eabi-size   intrupts_led_on.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6472	     20	   1572	   8064	   1f80	intrupts_led_on.elf
+Finished building: default.size.stdout
+ 

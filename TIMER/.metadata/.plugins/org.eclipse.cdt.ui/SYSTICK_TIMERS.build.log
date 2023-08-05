@@ -1,0 +1,10 @@
+13:18:05 **** Incremental Build of configuration Debug for project SYSTICK_TIMERS ****
+make -j4 all 
+arm-none-eabi-size   SYSTICK_TIMERS.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6812	     20	   1572	   8404	   20d4	SYSTICK_TIMERS.elf
+Finished building: default.size.stdout
+ 
+
+13:18:05 Build Finished. 0 errors, 0 warnings. (took 444ms)
+

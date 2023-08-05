@@ -1,0 +1,10 @@
+17:24:39 **** Incremental Build of configuration Debug for project PWM_INPUT_CAPTURE ****
+make -j4 all 
+arm-none-eabi-size   PWM_INPUT_CAPTURE.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44124	    488	   1896	  46508	   b5ac	PWM_INPUT_CAPTURE.elf
+Finished building: default.size.stdout
+ 
+
+17:24:40 Build Finished. 0 errors, 0 warnings. (took 503ms)
+

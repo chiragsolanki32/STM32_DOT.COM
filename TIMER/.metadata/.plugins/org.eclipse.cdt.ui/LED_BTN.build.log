@@ -1,0 +1,10 @@
+12:27:16 **** Incremental Build of configuration Debug for project LED_BTN ****
+make -j4 all 
+arm-none-eabi-size   LED_BTN.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6504	     20	   1572	   8096	   1fa0	LED_BTN.elf
+Finished building: default.size.stdout
+ 
+
+12:27:16 Build Finished. 0 errors, 0 warnings. (took 499ms)
+

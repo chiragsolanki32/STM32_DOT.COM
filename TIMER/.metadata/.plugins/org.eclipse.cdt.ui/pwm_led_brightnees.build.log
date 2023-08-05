@@ -1,0 +1,10 @@
+17:28:03 **** Incremental Build of configuration Debug for project pwm_led_brightnees ****
+make -j4 all 
+arm-none-eabi-size   pwm_led_brightnees.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9564	     20	   1636	  11220	   2bd4	pwm_led_brightnees.elf
+Finished building: default.size.stdout
+ 
+
+17:28:03 Build Finished. 0 errors, 0 warnings. (took 450ms)
+

@@ -1,0 +1,10 @@
+16:54:37 **** Build of configuration Debug for project sleep_mode ****
+make -j4 all 
+arm-none-eabi-size   sleep_mode.elf 
+   text	   data	    bss	    dec	    hex	filename
+  34228	    488	   1672	  36388	   8e24	sleep_mode.elf
+Finished building: default.size.stdout
+ 
+
+16:54:38 Build Finished. 0 errors, 0 warnings. (took 497ms)
+

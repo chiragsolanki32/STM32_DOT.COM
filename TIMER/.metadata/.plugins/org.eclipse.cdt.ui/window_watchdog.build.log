@@ -1,0 +1,10 @@
+16:41:43 **** Incremental Build of configuration Debug for project window_watchdog ****
+make -j4 all 
+arm-none-eabi-size   window_watchdog.elf 
+   text	   data	    bss	    dec	    hex	filename
+  12780	     20	   1724	  14524	   38bc	window_watchdog.elf
+Finished building: default.size.stdout
+ 
+
+16:41:43 Build Finished. 0 errors, 0 warnings. (took 449ms)
+

@@ -1,0 +1,10 @@
+16:45:05 **** Build of configuration Debug for project watch_dog_timer ****
+make -j4 all 
+arm-none-eabi-size   watch_dog_timer.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6652	     20	   1588	   8260	   2044	watch_dog_timer.elf
+Finished building: default.size.stdout
+ 
+
+16:45:05 Build Finished. 0 errors, 0 warnings. (took 499ms)
+

@@ -1,0 +1,49 @@
+15:50:30 **** Incremental Build of configuration Debug for project LED_PUSH1 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xC -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:15: error: lvalue required as left operand of assignment
+  101 |    BTN_Pin_Pin=  HAL_GPIO_ReadPin(GPIOC,BTN_Pin_Pin);// PUSH BUTTON
+      |               ^
+../Core/Src/main.c:102:4: error: 'BTN_GPIO_Port' undeclared (first use in this function); did you mean 'BTN_Pin_GPIO_Port'?
+  102 | if(BTN_GPIO_Port==GPIO_PIN_SET);
+      |    ^~~~~~~~~~~~~
+      |    BTN_Pin_GPIO_Port
+../Core/Src/main.c:102:4: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:102:1: warning: this 'if' clause does not guard... [-Wmisleading-indentation]
+  102 | if(BTN_GPIO_Port==GPIO_PIN_SET);
+      | ^~
+../Core/Src/main.c:104:1: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'if'
+  104 | {//turn on led
+      | ^
+../Core/Src/main.c:105:21: error: 'GPIOPB7' undeclared (first use in this function); did you mean 'GPIOB'?
+  105 |   HAL_GPIO_WritePin(GPIOPB7, LED_Pin, GPIO_PIN_SET);
+      |                     ^~~~~~~
+      |                     GPIOB
+../Core/Src/main.c:105:30: error: 'LED_Pin' undeclared (first use in this function)
+  105 |   HAL_GPIO_WritePin(GPIOPB7, LED_Pin, GPIO_PIN_SET);
+      |                              ^~~~~~~
+../Core/Src/main.c:107:1: error: 'else' without a previous 'if'
+  107 | else
+      | ^~~~
+../Core/Src/main.c:162:13: error: invalid storage class for function 'MX_GPIO_Init'
+  162 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:214:1: error: expected declaration or statement at end of input
+  214 | }
+      | ^
+At top level:
+../Core/Src/main.c:205:6: warning: 'Error_Handler' defined but not used [-Wunused-function]
+  205 | void Error_Handler(void)
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:162:13: warning: 'MX_GPIO_Init' defined but not used [-Wunused-function]
+  162 | static void MX_GPIO_Init(void)
+      |             ^~~~~~~~~~~~
+../Core/Src/main.c:118:6: warning: 'SystemClock_Config' defined but not used [-Wunused-function]
+  118 | void SystemClock_Config(void)
+      |      ^~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+15:50:30 Build Failed. 8 errors, 4 warnings. (took 547ms)
+

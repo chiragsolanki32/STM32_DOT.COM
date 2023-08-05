@@ -1,0 +1,10 @@
+13:18:42 **** Incremental Build of configuration Debug for project input_capture ****
+make -j4 all 
+arm-none-eabi-size   input_capture.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13248	     20	   1724	  14992	   3a90	input_capture.elf
+Finished building: default.size.stdout
+ 
+
+13:18:42 Build Finished. 0 errors, 0 warnings. (took 443ms)
+
